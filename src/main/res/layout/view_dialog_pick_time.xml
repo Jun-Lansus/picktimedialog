@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+   <TextView
+
+       android:textColor="@android:color/black"
+       android:layout_marginTop="23dp"
+       android:layout_marginBottom="23dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="17sp"
+       android:text="筛选时间"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_pick_time_start"
+        style="?borderlessButtonStyle"
+        android:background="@drawable/bg_login_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择开始时间"/>
+            <TextView
+                android:id="@+id/tv_dialog_pick_time_start"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_pick_time_end"
+        android:layout_marginTop="10dp"
+        style="?borderlessButtonStyle"
+        android:background="@drawable/bg_login_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择结束时间"/>
+            <TextView
+                android:id="@+id/tv_dialog_pick_time_end"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_dialog_pick_time_confirm"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:text="确 定"
+        android:background="@drawable/bg_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
